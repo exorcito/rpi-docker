@@ -9,20 +9,20 @@
 
 ## Installation
 
-* 1) Download your image from hypriot
+1. Download your image from hypriot
      
      Link: https://blog.hypriot.com/downloads/
 
-* 2) Write your image in the SD using Win32 Disk Imager
+2. Write your image in the SD using Win32 Disk Imager
 
-* 3) Define the hostname of each cluster machine
+3. Define the hostname of each cluster machine
      
      login with: pirate / hypriot
      sudo vi /boot/user-data
      
      Search 'hostname' and replace by your desired hostname
      
-* 4) Define your network for each cluster machine
+4. Define your network for each cluster machine
 
      sudo vi /etc/network/interfaces.d/eth0
      
@@ -37,14 +37,14 @@
      dns-nameservers 8.8.8.8
      dns-nameservers 8.8.4.4
 
-* 5) Clone this repo in your central machine or node 1
+5. Clone this repo in your central machine or node 1
 
-* 6) Define your hosts in files/common/etc_hosts
+6. Define your hosts in files/common/etc_hosts
 
-* 7) Define your ansible hosts in files/common/hosts
+7. Define your ansible hosts in files/common/hosts
 
-* 8) Define your installation in infra_install.yml
+8.  Define your installation in infra_install.yml
 
-* 9) Launch install.sh
+9.  Launch install.sh
 
-## Enjoy It!
+### Enjoy It!
