@@ -43,6 +43,8 @@
 
 * 7) Define your ansible hosts in files/common/hosts
 
-* 8) Launch install.sh
+* 8) Define your installation in infra_install.yml
+
+* 9) Launch install.sh
 
 ## Enjoy It!
