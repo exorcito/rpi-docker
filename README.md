@@ -1,4 +1,5 @@
-## Cluster Raspberry Pi 3 deployed by Ansible with Docker. Its includes elements such as: Portainer, Traefik, Consul, Stack ELK and Prometheus
+## Cluster Raspberry Pi 3 deployed by Ansible with Docker
+
 
 **Highlights**
 
@@ -6,6 +7,7 @@
 * Its included several elements for use with Docker ( Portainer, Cadvisor, Prometheus, Stack ELK, Traefik and Consul )
 * Ansible allows to deploy and manage your infrastructure ( packages system, docker containers, etc.. )
 * Ease of use with *one-click* install
+
 
 ## Installation
 
