@@ -1,0 +1,9 @@
+---
+
+- name: CONSUL - Discovery Services
+  docker_container:
+    name: consul
+    image: hypriot/rpi-consul
+    state: started
+    restart: yes
+    command: "agent -server -data-dir /data -bootstrap-expect 1 -ui-dir /ui -client=0.0.0.0"

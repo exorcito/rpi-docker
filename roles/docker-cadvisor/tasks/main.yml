@@ -1,0 +1,10 @@
+---
+
+- name: METRICS - Start Cadvisor
+  docker_container:
+    name: cadvisor
+    image: braingamer/cadvisor-arm
+    state: started
+    restart: yes
+    ports:
+     - "{{cadvisor_port}}:8080"

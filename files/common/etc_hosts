@@ -1,0 +1,9 @@
+127.0.0.1       localhost
+::1             localhost ip6-localhost ip6-loopback
+ff02::1         ip6-allnodes
+ff02::2         ip6-allrouters
+
+192.168.0.50    alderaan        alderaan.local  alderaan.lan
+192.168.0.51    dagobah         dagobah.local   dagobah.lan
+192.168.0.52    tatooine        tatooine.local  tatooine.lan
+192.168.0.53    dantooine       dantooine.local dantooine.lan

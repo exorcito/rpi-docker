@@ -1,0 +1,19 @@
+---
+
+- name: Raspbery Pi Cluster Install - Docker Version
+  hosts: control,nodes
+  roles:
+    # Common roles
+     - { role: locales, become: true }
+     - { role: common, become: true }
+     - { role: zsh, become: true }
+    # Server roles
+     - { role: python, become: true }
+     - { role: ssh, become: true }
+    # Docker Infra roles
+     - { role: docker-portainer, become: true }
+     - { role: docker-cadvisor, become: true }
+     - { role: docker-traefik, become: true }
+     - { role: docker-consul, become: true }
+     - { role: docker-prom, become: true }
+     - { role: docker-elk, become: true }

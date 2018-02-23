@@ -1,0 +1,23 @@
+---
+
+- hosts: all
+  become: yes
+
+  tasks:
+
+  - name: Update APT package cache
+    apt: update_cache=yes cache_valid_time=600
+    
+  - name: Upgrade installed packages
+    apt: upgrade=yes    
+    register: apt_result
+
+  - name: Upgrade APT to the latest packages
+    apt: upgrade=dist
+    register: apt_result
+
+  - name: Autoremove unused packages
+    apt: autoremove=yes
+    register: apt_result
+
+- debug: msg="{{ apt_result.stdout }}"    

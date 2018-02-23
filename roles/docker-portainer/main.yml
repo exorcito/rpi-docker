@@ -1,0 +1,13 @@
+---
+
+- name: UI - Portainer
+  docker_container:
+    name: portainer
+    image: hypriot/rpi-portainer
+    state: started
+    restart: yes
+    ports:
+     - "{{portainer_port}}:9000"
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - ./volumes/data:/data

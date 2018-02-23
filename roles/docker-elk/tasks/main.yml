@@ -1,0 +1,36 @@
+---
+
+- name: ELASTICSEARCH - ELK Stack
+  docker_container:
+    name: elasticsearch
+    image: ind3x/rpi-elasticsearch
+    state: started
+    restart: yes
+    ports:
+     - "9200:9200"
+     - "9300:9300"
+    command: "elasticsearch -Des.network.host=0.0.0.0"
+
+- name: LOGSTASH - ELK Stack
+  docker_container:
+    name: logstash
+    image: ind3x/rpi-logstash
+    state: started
+    restart: yes
+    links: elasticsearch   
+    ports:
+     - "5000:5000"
+    volumes:
+     - ./files/logstash/:/etc/logstash/conf.d  
+    
+- name: KIBANA - ELK Stack
+  docker_container:
+    name: kibana
+    image: ind3x/rpi-logstash
+    state: started
+    restart: yes
+    links: elasticsearch   
+    ports:
+     - "5601:5601"
+    volumes:
+     - ./files/kibana/:/opt/kibana/config/

@@ -1,0 +1,10 @@
+---
+
+- name: GRAFANA - Metrics Dashboard
+  docker_container:
+    name: grafana
+    image: heziegl/rpi-grafana:3.1.1
+    state: started
+    restart: yes
+    ports:
+     - "3000:3000"    

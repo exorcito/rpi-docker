@@ -1,0 +1,11 @@
+---
+
+aptcachetime: 3600
+user:
+locale: "es_ES.UTF-8"
+timezone: "Europe/Paris"
+ssh:
+  start: true
+  service_enabled: true
+  password_auth: true
+  root_login: false

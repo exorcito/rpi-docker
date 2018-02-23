@@ -1,0 +1,7 @@
+[control]
+alderaan        ansible_ssh_user=pirate portainer_port=2240 cadvisor_port=2241 traefik_port1=2242 traefik_port2=2453 traefik_port3=2244
+
+[nodes]
+dagobah         ansible_ssh_user=pirate portainer_port=2250 cadvisor_port=2251 traefik_port1=2252 traefik_port2=2253 traefik_port3=2254
+tatooine        ansible_ssh_user=pirate portainer_port=2260 cadvisor_port=2261 traefik_port1=2262 traefik_port2=2263 traefik_port3=2264
+dantooine       ansible_ssh_user=pirate portainer_port=2270 cadvisor_port=2271 traefik_port1=2273 traefik_port2=2274 traefik_port3=2275

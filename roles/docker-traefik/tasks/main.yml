@@ -1,0 +1,14 @@
+---
+
+- name: TRAEFIK - Reverse Proxy
+  docker_container:
+    name: traefik
+    image: hypriot/rpi-traefik
+    state: started
+    restart: yes
+    ports:
+     - "{{traefik_port1}}:8080"
+     - "{{traefik_port2}}:80"
+     - "{{traefik_port3}}:443"
+    volumes:
+     - ./files/traefik/traefik.toml:/etc/traefik/traefik.toml          

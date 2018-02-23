@@ -1,0 +1,19 @@
+---
+
+- name: PROMETHEUS - Alert Monitoring
+  docker_container:
+    name: prometheus
+    image: exorcito/rpi-prometheus
+    state: started
+    restart: yes
+    volumes:
+     - ./files/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml 
+     
+- name: PUSHGATEWAY - Alert Generator
+  docker_container:
+    name: pushgateway
+    image: exorcito/rpi-pushgateway
+    state: started
+    restart: yes
+    ports:
+     - "9091:9091"    
