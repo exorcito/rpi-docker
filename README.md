@@ -8,7 +8,6 @@
 * Ansible allows to deploy and manage your infrastructure ( packages system, docker containers, etc.. )
 * Ease of use with *one-click* install
 
-
 ## Installation
 
 1. Download your image from hypriot
