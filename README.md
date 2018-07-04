@@ -1,6 +1,5 @@
 ## Cluster Raspberry Pi 3 deployed by Ansible with Docker
 
-
 **Highlights**
 
 * Based in Hypriot for Raspberry Pi ( Official Docker Support for Raspberry Pi3 )
